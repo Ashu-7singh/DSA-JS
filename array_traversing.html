@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Travesing</title>
+  </head>
+  <body>
+    <script>
+      //this is Traversing means showing the data
+      let data = [11, 21, 31, 41, 51, 61, 71, 81, 91, 10];
+
+      //   for (let i = 0; i < data.length; i++) {
+      //     document.write(`Array of ${i} is ${data[i]} <br>`);
+      //   }
+
+      // accessing any element means any data
+      //   let x = 8;
+
+      //   document.write(data[x]);
+
+      function getElement() {
+        let el = document.getElementById("element").value;
+
+        if (el < data.length && el>0 && typeof parseInt(el) === "number") {
+          alert(data[el]);
+        } else alert("please put a valid input");
+      }
+    </script>
+
+    <input type="text" id="element" />
+    <button onclick="getElement()">Get Element</button>
+  </body>
+</html>

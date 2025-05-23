@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Travesing</title>
+  </head>
+  <body>
+    <script>
+      let data=[11,12,13,14,15,16,17,18,19,20]
+
+      // for( let i=0;i<data.length;i++){
+      //   document.write(` Array of ${i} is ${data[i]} <br>`)
+      // }
+// accessing the data 
+
+// let x=0
+
+// document.write(data[x])
+
+function getElement(){
+  // let el=data.length
+  let el=document.getElementById("element").value
+
+  if(el<data.length && el>0 && typeof parseInt(el)=== "number"){
+  alert(data[el])
+
+  }else {
+    alert("Please enter a valid input ")
+  }
+}
+    </script>
+
+<input type="text" id="element"/>
+<button onclick="getElement()">Get Element</button>
+
+  </body>
+</html>

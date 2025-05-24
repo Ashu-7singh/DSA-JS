@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Array Insert</title>
+</head>
+<body>
+  <script>
+  // let items= [11,22,33,44,55,66,77,88,99]
+
+  // let position=2
+  // let newItems=2000
+  // document.writeln(`${items}<br>`)
+
+  // for(let i=items.length-1;i>=0;i--){
+  //   if(i >= position){
+  //     items[i+1]=items[i]
+  //     if(i == position){
+  //       items[i] = newItems
+  //     }
+  //   }
+  // }
+  //   document.writeln(`${items} <br>`)
+
+
+
+// by using splice
+
+let item=[12,23,34,,45,3,42,]
+document.writeln(`${item} <br> <br>`)
+
+item.splice(2,0,12345)
+
+document.writeln(`${item} <br><br><br>`)
+
+
+// function getInsert(){
+
+//   let data=[11,22,33,44,55,66,77,88,99]
+//   let position=document.getElementById("position").value
+//   let newEl=document.getElementById("newEl").value
+// document.write(`${data} <br>`)
+
+//   for(let i = data.length-1;i>=0;i--){
+//     if(i >= position){
+// data[i+1]=data[i]
+// if(i == position)
+// data[i]=newEl
+//     }
+//   }
+//   document.write(`${data} <br>`)
+
+// }
+
+  </script>
+
+</body>
+<input type="text" id="position" />
+<input type="text" id="newEl" />
+
+<button onclick="getInsert()">Insert</button>
+</html>
